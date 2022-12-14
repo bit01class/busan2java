@@ -4,12 +4,25 @@ class Car{
 	public int maxSpeed;
 
 	public Car(){
-		model="부가티";
-		maxSpeed=400;
+		//model="부가티";
+		//maxSpeed=400;
+		//showSpeed();
+		this("부가티",400);
 		showSpeed();
 	}
 
-	public Car(String a,int b){
+	public Car(int b){
+		// 객체 생성
+		maxSpeed=b;
+		if(b<=120){ model="모닝";}
+		else if(b<=150){ model="아반떼";}
+		else if(b<=180){ model="소나타";}
+		else if(b<=200){ model="그렌져";}
+		else model="비싼차";
+		showSpeed();
+	}
+	public Car(String a, int b){
+		// 객체 생성
 		model=a;
 		maxSpeed=b;
 		showSpeed();

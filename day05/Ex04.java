@@ -3,7 +3,7 @@ class Ex04{
 static -> static		[클래스명.]메서드명();
 static -> non-static		참조변수.메서드명();
 non-static -> static		[클래스명.]메서드명();
-non-static -> non-static	[참조변수.]메서드명();
+non-static -> non-static	[this.]메서드명();
 
 */
 public static void main(String[] args){
