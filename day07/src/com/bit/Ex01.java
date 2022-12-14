@@ -1,3 +1,4 @@
+package com.bit;
 /*
 1
 1 2
